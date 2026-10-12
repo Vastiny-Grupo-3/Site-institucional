@@ -1,4 +1,4 @@
-# DMC Eletropeças — site institucional em Feature-Sliced Design
+# Site institucional DMC Eletropeças em Feature-Sliced Design
 
 Site institucional da DMC Eletropeças, organizado nas mesmas camadas do projeto de referência.
 O conteúdo (textos, produtos, serviços, contato) fica nas entidades. A página só encaixa os blocos.
