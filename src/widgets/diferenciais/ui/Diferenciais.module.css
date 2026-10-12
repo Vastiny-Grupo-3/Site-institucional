@@ -1,0 +1,68 @@
+.secao {
+    padding: var(--esp-9) var(--esp-5);
+    color: #ffffff;
+    background-color: var(--cor-marinho);
+}
+
+.conteudo {
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+}
+
+.intro {
+    display: grid;
+    gap: var(--esp-6);
+    align-items: end;
+}
+
+.texto {
+    max-width: 40rem;
+    color: var(--cor-texto-claro-suave);
+    line-height: 1.7;
+}
+
+.grade {
+    display: grid;
+    gap: 1px;
+    margin-top: var(--esp-7);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--raio-sm);
+}
+
+.card {
+    padding: var(--esp-6);
+    background-color: var(--cor-marinho);
+}
+
+.card svg {
+    color: var(--cor-laranja);
+}
+
+.card h3 {
+    margin-top: var(--esp-4);
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin-top: var(--esp-3);
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+    .grade {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    .intro {
+        grid-template-columns: 0.9fr 1.4fr;
+    }
+
+    .grade {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

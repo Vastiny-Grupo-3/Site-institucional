@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 112px;
+    padding: var(--esp-4) var(--esp-5);
+    background-color: var(--cor-superficie);
+    border-radius: var(--raio-sm);
+    box-shadow: 0 1px 2px rgba(8, 38, 68, 0.04);
+    outline: 1px solid var(--cor-borda);
+}
+
+.card img {
+    width: 100%;
+    max-height: 72px;
+    object-fit: contain;
+}

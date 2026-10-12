@@ -1,0 +1,38 @@
+.secao {
+    padding: var(--esp-8) var(--esp-5) var(--esp-9);
+    background-color: #ffffff;
+}
+
+.conteudo {
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+}
+
+.grade {
+    display: grid;
+    gap: var(--esp-4);
+    margin-top: var(--esp-7);
+}
+
+.card {
+    padding: var(--esp-6);
+    background-color: var(--cor-superficie-suave);
+    border-radius: var(--raio-sm);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--cor-marinho);
+}
+
+.card p {
+    margin-top: var(--esp-4);
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+@media (min-width: 800px) {
+    .grade {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,106 @@
+.secao {
+    scroll-margin-top: var(--altura-cabecalho);
+    padding: var(--esp-9) var(--esp-5);
+    background-color: #ffffff;
+}
+
+.grade {
+    display: grid;
+    gap: 48px;
+    align-items: center;
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+}
+
+.moldura {
+    position: relative;
+}
+
+.moldura::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 112px;
+    height: 112px;
+    border-top: 4px solid var(--cor-laranja);
+    border-left: 4px solid var(--cor-laranja);
+}
+
+.moldura img {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: var(--raio-sm);
+    box-shadow: 0 18px 40px rgba(8, 38, 68, 0.16);
+}
+
+.selo {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    max-width: 230px;
+    padding: var(--esp-5);
+    color: #ffffff;
+    background-color: var(--cor-laranja);
+    border-radius: var(--raio-sm);
+    box-shadow: 0 16px 30px rgba(245, 130, 32, 0.35);
+}
+
+.selo strong,
+.selo span {
+    display: block;
+}
+
+.selo span {
+    margin-top: var(--esp-2);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.rotulo {
+    color: var(--cor-azul);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.traco {
+    display: block;
+    width: 58px;
+    height: 4px;
+    margin-top: var(--esp-3);
+    border-radius: var(--raio-pilula);
+    background-color: var(--cor-laranja);
+}
+
+.titulo {
+    margin-top: var(--esp-5);
+    font-family: var(--fonte-display);
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+}
+
+.texto {
+    margin-top: var(--esp-4);
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--esp-2);
+    margin-top: var(--esp-6);
+    color: var(--cor-azul);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (min-width: 960px) {
+    .grade {
+        grid-template-columns: 1fr 1fr;
+    }
+}

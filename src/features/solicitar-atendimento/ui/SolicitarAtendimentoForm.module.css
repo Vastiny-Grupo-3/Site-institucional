@@ -1,0 +1,15 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: var(--esp-4);
+}
+
+.confirmacao {
+    margin: 0;
+    padding: var(--esp-3) var(--esp-4);
+    color: var(--cor-marinho);
+    background-color: #e8f6ee;
+    border-radius: var(--raio-sm);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

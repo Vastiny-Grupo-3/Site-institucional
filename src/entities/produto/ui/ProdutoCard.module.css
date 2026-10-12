@@ -1,0 +1,50 @@
+.card {
+    overflow: hidden;
+    background-color: var(--cor-superficie);
+    border-radius: var(--raio-sm);
+    box-shadow: var(--sombra-card);
+    outline: 1px solid var(--cor-borda);
+    transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-card-hover);
+}
+
+.foto {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.corpo {
+    padding: var(--esp-5);
+}
+
+.aplicacao {
+    color: var(--cor-azul);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.nome {
+    margin-top: var(--esp-3);
+    font-size: 1.2rem;
+    color: var(--cor-marinho);
+}
+
+.descricao {
+    margin-top: var(--esp-3);
+    color: var(--cor-texto-secundario);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

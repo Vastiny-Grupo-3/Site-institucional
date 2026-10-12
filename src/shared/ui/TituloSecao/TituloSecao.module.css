@@ -1,0 +1,46 @@
+.bloco {
+    max-width: 720px;
+}
+
+.rotulo {
+    margin-bottom: var(--esp-3);
+    color: var(--cor-azul);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.traco {
+    display: block;
+    width: 58px;
+    height: 4px;
+    border-radius: var(--raio-pilula);
+    background-color: var(--cor-laranja);
+}
+
+.titulo {
+    margin-top: var(--esp-4);
+    font-family: var(--fonte-display);
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+    font-weight: 700;
+    color: var(--cor-marinho);
+}
+
+.descricao {
+    margin-top: var(--esp-4);
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+.claro .rotulo {
+    color: var(--cor-laranja-suave);
+}
+
+.claro .titulo {
+    color: #ffffff;
+}
+
+.claro .descricao {
+    color: var(--cor-texto-claro);
+}

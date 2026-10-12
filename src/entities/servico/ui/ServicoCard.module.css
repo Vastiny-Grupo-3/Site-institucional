@@ -1,0 +1,22 @@
+.card {
+    padding: var(--esp-5);
+    background-color: var(--cor-superficie);
+    border-radius: var(--raio-sm);
+    box-shadow: 0 1px 2px rgba(8, 38, 68, 0.05);
+}
+
+.icone {
+    color: var(--cor-laranja);
+}
+
+.titulo {
+    margin-top: var(--esp-4);
+    font-size: 1.125rem;
+    color: var(--cor-marinho);
+}
+
+.texto {
+    margin-top: var(--esp-3);
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+}

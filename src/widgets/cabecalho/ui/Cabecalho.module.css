@@ -1,0 +1,132 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--cor-borda);
+    backdrop-filter: blur(10px);
+    transition: box-shadow var(--transicao);
+}
+
+.rolado {
+    box-shadow: 0 8px 24px rgba(8, 38, 68, 0.12);
+}
+
+.pular {
+    position: absolute;
+    left: var(--esp-4);
+    top: -80px;
+    z-index: 50;
+    padding: var(--esp-2) var(--esp-3);
+    background-color: #ffffff;
+    color: var(--cor-marinho);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pular:focus {
+    top: var(--esp-3);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--esp-4);
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+    padding: var(--esp-3) var(--esp-5);
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.nav {
+    display: none;
+    align-items: center;
+    gap: var(--esp-6);
+}
+
+.link {
+    position: relative;
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-laranja);
+    transition: width var(--transicao);
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: var(--esp-2);
+}
+
+.acoes a {
+    display: none;
+}
+
+.menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    color: var(--cor-azul);
+    background: transparent;
+    border: 0;
+    border-radius: var(--raio);
+    cursor: pointer;
+}
+
+.mobile {
+    display: none;
+    flex-direction: column;
+    padding: 0 var(--esp-5) var(--esp-3);
+    background-color: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.mobile a {
+    padding: var(--esp-3) var(--esp-2);
+    color: #334155;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.aberto {
+    display: flex;
+}
+
+@media (min-width: 960px) {
+    .nav {
+        display: flex;
+    }
+
+    .acoes a {
+        display: inline-flex;
+    }
+
+    .menu,
+    .mobile,
+    .mobile.aberto {
+        display: none;
+    }
+}

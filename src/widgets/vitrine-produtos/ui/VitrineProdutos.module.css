@@ -1,0 +1,34 @@
+.secao {
+    scroll-margin-top: var(--altura-cabecalho);
+    padding: var(--esp-9) var(--esp-5);
+    background-color: #ffffff;
+}
+
+.conteudo {
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+}
+
+.grade {
+    display: grid;
+    gap: var(--esp-6);
+    margin-top: var(--esp-7);
+}
+
+.acao {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--esp-7);
+}
+
+@media (min-width: 640px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .grade {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

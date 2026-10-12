@@ -1,0 +1,5 @@
+export { Button } from "./Button/Button"
+export { Icone } from "./Icone/Icone"
+export { Input } from "./Input/Input"
+export { Textarea } from "./Textarea/Textarea"
+export { TituloSecao } from "./TituloSecao/TituloSecao"
